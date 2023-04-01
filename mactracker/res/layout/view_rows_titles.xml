@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/proteinText4"
+        android:layout_width="37dp"
+        android:layout_height="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Fat:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/carbsText"
+        app:layout_constraintTop_toBottomOf="@+id/nameFood" />
+
+    <TextView
+        android:id="@+id/proteinText3"
+        android:layout_width="47dp"
+        android:layout_height="21dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Carbs:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:autoSizeMaxTextSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/proteinText"
+        app:layout_constraintTop_toBottomOf="@+id/nameFood" />
+
+    <TextView
+        android:id="@+id/proteinText2"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="5dp"
+        android:text="Protein:"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:autoSizeMaxTextSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/nameFood" />
+
+    <TextView
+        android:id="@+id/nameFood"
+        android:layout_width="220dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="5dp"
+        android:text="Food Name"
+
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/proteinText"
+        android:layout_width="37dp"
+        android:layout_height="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="PPP"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:autoSizeMaxTextSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/proteinText2"
+        app:layout_constraintTop_toBottomOf="@+id/nameFood" />
+
+    <TextView
+        android:id="@+id/carbsText"
+        android:layout_width="48dp"
+        android:layout_height="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="CCC"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:autoSizeMaxTextSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/proteinText3"
+        app:layout_constraintTop_toBottomOf="@+id/nameFood" />
+
+    <TextView
+        android:id="@+id/fatText"
+        android:layout_width="37dp"
+        android:layout_height="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="FFF"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:autoSizeMaxTextSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/proteinText4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
